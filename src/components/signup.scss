@@ -1,0 +1,101 @@
+@import '../variables';
+
+.logo-vertical {
+  width: 400px;
+}
+
+.home-wrapper {
+  .nav-pills .nav-link.active, .nav-pills .show > .nav-link {
+    border-left: none !important;
+    border-bottom: 3px solid $font-color !important;
+  }
+
+  .text-sm {
+    font-size: 13px;
+    font-weight: bold;
+  }
+
+  .google-icon {
+    background-color: #D64836;
+  }
+
+  .fb-icon {
+    background-color: #1775EB;
+  }
+
+  .twitter-icon  {
+    background-color: #01ACEE;
+  }
+
+  .google-icon, .fb-icon, .twitter-icon {
+    width: 45px;
+    height: 45px;
+    color: #fff;
+    border-radius: 50% !important;
+    i {
+      vertical-align: super;
+      position: relative;
+      top: -3px;
+    }
+
+    &:hover {
+      color: #fff;
+      box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+    }
+  }
+
+  h6 {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    text-align: center;
+  }
+
+  h6:before, h6:after {
+    position: absolute;
+    top: 51%;
+    overflow: hidden;
+    width: 50%;
+    height: 1px;
+    content: '\a0';
+    background-color: #3d406573;
+  }
+  h6:before {
+    margin-left: -54%;
+    text-align: right;
+  }
+
+  h6:after {
+    margin-left: 4%;
+  }
+}
+
+.swal2-active-progress-step {
+  display: none !important;
+}
+
+.swal2-title {
+  font-size: 25px !important;
+  color: $font-color !important;
+}
+
+.swal2-content {
+  font-size: 15px !important;
+  color: $font-color !important;
+  padding: 0 50px !important;
+  margin-top: 10px !important;
+  .swal2-input {
+    box-shadow: none !important
+  }
+}
+
+.swal2-actions {
+  margin-top: 10px !important;
+}
+
+
+.spinner-grow-sm {
+  width: 10px;
+  height: 10px;
+  vertical-align: baseline;
+}

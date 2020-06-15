@@ -1,0 +1,121 @@
+@import './variables';
+@import url('https://fonts.googleapis.com/css?family=Fira+Sans:400,500,600,700,800');
+* {
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    font-weight: 400;
+    font-family: 'Fira Sans', sans-serif;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label,
+span {
+    font-family: 'Fira Sans', sans-serif;
+}
+
+body,
+html, #root{
+  width: 100%;
+  height: 100%;
+}
+
+body {
+    color: $font-color !important;
+}
+
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+    color: $tab-color !important;
+}
+
+.nav .nav-link {
+    color: $font-color !important;
+    border-radius: 0 !important;
+    padding: .25rem 1rem;
+    margin: .25rem 0;
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: $font-color !important;
+    background-color: #fff !important;
+    border-left: 3px solid $tab-color !important;
+}
+
+.btn-primary {
+    background-color: $primary-color !important;
+    border-color: $primary-color !important;
+}
+
+.btn-primary:not(:disabled):not(.disabled).active:focus, .btn-primary:not(:disabled):not(.disabled):active:focus, .show>.btn-primary.dropdown-toggle:focus {
+  box-shadow: 0 0 0 0.2rem rgba(238,14,81,.5) !important;
+}
+
+.navbar-primary {
+    background-color: $tab-color !important;
+    color: #fff !important;
+    .nav-item {
+        font-size: 17px;
+    }
+    .nav-link {
+        color: #fff !important;
+        &.dropdown-toggle::after {
+            display: none;
+        }
+    }
+    .dropdown-item {
+        font-size: 13px;
+        .fa-bullhorn {
+            background-color: antiquewhite;
+            padding: 10px;
+            border-radius: 50%;
+        }
+    }
+    .badge {
+        position: relative;
+        top: -13px;
+        left: -9px;
+        font-size: 10px;
+    }
+}
+
+.navbar-light {
+    .nav-link {
+        color: $font-color !important;
+    }
+}
+
+.icon-section {
+  .nav-link {
+    font-size: 18px;
+    line-height: 1;
+  }
+}
+
+.empty-state {
+    color: #555;
+}
+
+.right-arrow {
+    width: 13px;
+    height: 13px;
+}
+
+.swal2-styled.swal2-confirm {
+  background-color: $primary-color;
+}
+
+.swal2-styled.swal2-cancel {
+  background-color: #fff !important;
+  color: $font-color !important;
+}

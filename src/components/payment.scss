@@ -1,0 +1,39 @@
+@import '../variables';
+
+.active-card {
+  background-color: $font-color !important;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.15)!important;
+  color: #fff !important;
+  h2 {
+    color: #fff !important;
+  }
+
+  .help-text {
+    color: #fff !important;
+  }
+}
+
+.payment-wrapper {
+  .card {
+    border: 1px solid #e2e3ec !important;
+    background-color: #fff;
+    transition: background-color 0.3s ease-in,
+    box-shadow 0.5s ease;
+  }
+  .help-text {
+    font-size: 13px;
+    font-weight: lighter;
+    color: $font-color;
+  }
+  h2 {
+    font-size: 45px;
+    color: $primary-color;
+  }
+
+  .promo-section {
+    .list-group, .card, .list-group-item {
+      border: none !important;
+    }
+  }
+
+}
