@@ -1,7 +1,7 @@
 # Assignment 2
 
 * Date Created: 10 Jun 2020
-* Last Modification Date: 14 Jun 2020
+* Last Modification Date: 15 Jun 2020
 
 ## Authors
 
@@ -51,7 +51,7 @@ In the last step, open your web browser, and navigate to `localhost:3000` to vie
 
 The application is deployed in Heroku.
 
-You can find the application up and running on https://web-ass2.herokuapp.com/.
+You can find the application up and running on https://stacklearner.herokuapp.com/.
 
 ## Built With
 
@@ -70,15 +70,15 @@ You can find the application up and running on https://web-ass2.herokuapp.com/.
 ## W3C Compliance and Responsiveness
 
 * The application is w3c compliant which is validated using https://validator.w3.org/.
-* The application is cross-browser compliant and is responsive for all types of laptops and desktops. 
+* The application is cross-browser compliant and is responsive for all types of laptops and desktops.
 
 ## Links to pages
 
-* Landing page - https://web-ass2.herokuapp.com/home
-* Dashboard - https://web-ass2.herokuapp.com/dashboard
-* Payments - https://web-ass2.herokuapp.com/payment
-* Forum - https://web-ass2.herokuapp.com/discussion
-* User setting - https://web-ass2.herokuapp.com/settings
+* Landing page - https://stacklearner.herokuapp.com/home
+* Dashboard - https://stacklearner.herokuapp.com/dashboard
+* Payments - https://stacklearner.herokuapp.com/payment
+* Forum - https://stacklearner.herokuapp.com/discussion
+* User setting - https://stacklearner.herokuapp.com/settings
 
 ## Sources Used
 
@@ -104,7 +104,7 @@ app.listen(port, () => {
 });
 ```
 
-The code above was created by adapting the code in [Daniel Stoica](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) as shown below: 
+The code above was created by adapting the code in [Daniel Stoica](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae) as shown below:
 
 ```
 const path = require('path');
