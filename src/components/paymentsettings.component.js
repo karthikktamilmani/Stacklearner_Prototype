@@ -66,7 +66,7 @@ export default class PaymentSettings extends Component {
   };
 
   fetchCardDetails = () => {
-    this.setState ({
+    this.state = {
       cards: [
         {
           card_id: "1",
@@ -81,7 +81,7 @@ export default class PaymentSettings extends Component {
           expiry: "03/23",
         },
       ],
-    });
+    };
   };
 
   render() {

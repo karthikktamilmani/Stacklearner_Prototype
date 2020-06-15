@@ -9,15 +9,13 @@
 
 ## Getting Started
 
-**[Optional]** If needing to provide the marker with a copy of the project that should run on their local machine for development, testing and/or marking purposes. Please include the following sections.
-
 See deployment for notes on how to deploy the project on a live system.
 
 ### Prerequisites
 
-To have a local copy of this assingnment and running on your local machine, you will first need to install the following library
+To have a local copy of this assignment and running on your local machine, you will first need to install the following library
 
-* [npm](https://nodejs.org/en/download/)
+* [Node](https://nodejs.org/en/download/)
 
 
 ### Installing
@@ -28,11 +26,11 @@ A step by step series of examples that tell you how to get a development env run
 
 Run the following command from the terminal on your machine, to clone the repository:
 
-```git clone https://github.com/karthikktamilmani/ciena_assignment.git```
+```git clone https://git.cs.dal.ca/mani/a2_karthikk_tamilmani.git```
 
 #### Step 2: Install Dependencies
 
-Navigate into the `folder` folder and run the following command to install the required dependencies:
+Navigate into the root `a2_karthikk_tamilmani` folder and run the following command to install the required dependencies:
 
 ```npm install```
 
@@ -46,6 +44,8 @@ To start the app, without any complicated build steps, simply start the developm
 
 In the last step, open your web browser, and navigate to `localhost:3000` to view a running instance of the application. If everything went fine, you should see the following page:
 
+![Image of App Running](/deployed_app.png)
+
 
 ## Deployment
 
@@ -55,12 +55,30 @@ You can find the application up and running on https://web-ass2.herokuapp.com/.
 
 ## Built With
 
-
 * [React App](https://github.com/facebook/create-react-app). - React Application
 * [Express](https://expressjs.com/) - Web application framework - react app is served using express
 * [Bootstrap 4](https://getbootstrap.com/) - Used for front-end CSS designs
 * [SweetAlert](https://sweetalert.js.org/guides/) - Used to display Success, Confirmation messages
 * [jQuery](https://jquery.com/) - Used for DOM manipulations
+
+## Design justifications
+
+* Bootstrap - There are various reasons for selecting Bootstrap over Material design. The most important factor taken into consideration was that Material design was primarily made for mobile. Since our application is focused on laptop/desktop users, this played a significant role in the decision. Some of the other factors are: the speed of development, familiartiy of Bootstrap. Refer [blog](https://flatlogic.com/blog/bootstrap-vs-material-ui-which-one-to-use-for-the-next-web-app/).
+* Color Choice - **Shade of Red - Raspberry-red** - From this [blog](https://www.evinex.com/website-color-schemes/), the color red signifies passion, power and has positive effects. I wanted it to not signify danger and thereby going for a pinkish-red or raspberry red. To complement red, blue was selected to make the buttons look subtle.
+* Sweetalert - Provides options to customize modals.
+
+## W3C Compliance and Responsiveness
+
+* The application is w3c compliant which is validated using https://validator.w3.org/.
+* The application is cross-browser compliant and is responsive for all types of laptops and desktops. 
+
+## Links to pages
+
+* Landing page - https://web-ass2.herokuapp.com/home
+* Dashboard - https://web-ass2.herokuapp.com/dashboard
+* Payments - https://web-ass2.herokuapp.com/payment
+* Forum - https://web-ass2.herokuapp.com/discussion
+* User setting - https://web-ass2.herokuapp.com/settings
 
 ## Sources Used
 
@@ -107,27 +125,7 @@ app.listen(port, () => {
 - [Daniel Stoica](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae)'s Code was used because react application has issues building webpack in Heroku and hence express was used to serve the application.
 - [Daniel Stoica](https://medium.com/better-programming/how-to-deploy-your-react-app-to-heroku-aedc28b218ae)'s Code was modified by making use of the npm build script, so that the application is build initially and is served from the built one rather than serving from the public.
 
-## Design justifications
-
-* Bootstrap - There are various reasons for selecting Bootstrap over Material design. The most important factor taken into consideration was that Material design was primarily made for mobile. Since our application is focused on laptop/desktop users, this played a significant role in the decision. Some of the other factors are: the speed of development, familiartiy of Bootstrap. Refer [blog](https://flatlogic.com/blog/bootstrap-vs-material-ui-which-one-to-use-for-the-next-web-app/).
-* Color Choice - **Shade of Red - Raspberry-red** - From this [blog](https://www.evinex.com/website-color-schemes/), the color red signifies passion, power and has positive effects. I wanted it to not signify danger and thereby going for a pinkish-red or raspberry red. To complement red, blue was selected to make the buttons look subtle.
-* Sweetalert - Provides options to customize modals.
-
-## W3C Compliance and Responsiveness
-
-* The application deployed in heroku is w3c compliant.
-* The application is cross-browser compliant and is responsive for all types of laptops and desktops. 
-
-## Links to pages
-
-* https://web-ass2.herokuapp.com/
-* https://web-ass2.herokuapp.com/dashboard
-* https://web-ass2.herokuapp.com/payment
-* https://web-ass2.herokuapp.com/discussion
-* https://web-ass2.herokuapp.com/settings
-
 ## Acknowledgments
-
 
 * [Logo Generator](https://text.imageonline.co/) - Used this website to generate logo for the application.
 * [FlatUI Colors](https://www.materialui.co/flatuicolors)
